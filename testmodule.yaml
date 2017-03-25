@@ -17,20 +17,17 @@ data:
     profiles:
         default:
             rpms:
-                - tangerine
+                - mksh
     api:
         rpms:
-            - perl-Tangerine
-            - tangerine
+            - ed
+            - mksh
     components:
         rpms:
-            perl-List-Compare:
-                rationale: A dependency of tangerine.
-                ref: f25
-            perl-Tangerine:
-                rationale: Provides API for this module and is a dependency of tangerine.
-                ref: f25
+            ed:
+                rationale: A build dependency of mksh.
+                ref: master
             tangerine:
-                rationale: Provides API for this module.
+                rationale: The main package of the module.
                 buildorder: 10
-                ref: f25
+                ref: master
