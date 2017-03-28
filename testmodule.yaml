@@ -31,7 +31,3 @@ data:
                 rationale: The main package of the module.
                 buildorder: 10
                 ref: master
-            perl-Tangerine:
-                rationale: The main package of the module.
-                buildorder: 10
-                ref: master
