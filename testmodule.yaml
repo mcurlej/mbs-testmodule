@@ -27,7 +27,3 @@ data:
             ed:
                 rationale: A build dependency of mksh.
                 ref: master
-            mksh:
-                rationale: The main package of the module.
-                buildorder: 10
-                ref: master
