@@ -11,9 +11,8 @@ data:
         requires:
             base-runtime: master
     references:
-        community: https://fedoraproject.org/wiki/Modularity
+        community: https://docs.pagure.org/modularity/
         documentation: https://fedoraproject.org/wiki/Fedora_Packaging_Guidelines_for_Modules
-        tracker: https://taiga.fedorainfracloud.org/project/modularity
     profiles:
         default:
             rpms:
