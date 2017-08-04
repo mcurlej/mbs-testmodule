@@ -7,9 +7,9 @@ data:
         module: [ MIT ]
     dependencies:
         buildrequires:
-            base-runtime: master
+            bootstrap: master
         requires:
-            base-runtime: master
+            bootstrap: master
     references:
         community: https://docs.pagure.org/modularity/
         documentation: https://fedoraproject.org/wiki/Fedora_Packaging_Guidelines_for_Modules
@@ -25,8 +25,4 @@ data:
         rpms:
             ed:
                 rationale: A build dependency of mksh.
-                ref: master
-            mksh:
-                buildorder: 1
-                rationale: mksh
                 ref: master
