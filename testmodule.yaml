@@ -26,3 +26,7 @@ data:
             ed:
                 rationale: A build dependency of mksh.
                 ref: master
+            mksh:
+                rationale: A build dependency of mksh.
+                ref: master
+                buildorder: 1
