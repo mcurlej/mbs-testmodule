@@ -2,31 +2,25 @@ document: modulemd
 version: 1
 data:
     summary: A test module in all its beautiful beauty
-    description: This module demonstrates how to write simple modulemd files And can be used for testing the build and release pipeline.
+    description: >-
+        This module demonstrates how to write simple modulemd files And
+        can be used for testing the build and release pipeline.
     license:
         module: [ MIT ]
     dependencies:
         buildrequires:
-            bootstrap: master
+            platform: master
         requires:
-            bootstrap: master
+            platform: master
     references:
         community: https://docs.pagure.org/modularity/
         documentation: https://fedoraproject.org/wiki/Fedora_Packaging_Guidelines_for_Modules
-    profiles:
-        default:
-            rpms:
-                - mksh
-    api:
-        rpms:
-            - ed
-            - mksh
     components:
         rpms:
             ed:
-                rationale: A build dependency of mksh.
+                rationale: A build dependency of mksh, to test buildorder.
                 ref: master
             mksh:
-                rationale: A build dependency of mksh.
+                rationale: The main component of this module.
                 ref: master
                 buildorder: 1
