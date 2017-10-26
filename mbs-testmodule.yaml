@@ -24,5 +24,5 @@ data:
                 ref: master
             mksh:
                 rationale: The main component of this module.
-                ref: foobar
+                ref: master
                 buildorder: 1
