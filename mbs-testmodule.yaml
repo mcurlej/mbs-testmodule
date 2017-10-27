@@ -17,7 +17,7 @@ data:
     references:
         community: https://docs.pagure.org/modularity/
         documentation: https://fedoraproject.org/wiki/Fedora_Packaging_Guidelines_for_Modules
-    filters:
+    filter:
       rpms:
         - ed
     components:
