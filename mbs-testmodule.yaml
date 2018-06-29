@@ -9,20 +9,22 @@ data:
         module: [ MIT ]
     dependencies:
         buildrequires:
-            platform: master
-            # Buildrequire Host until MBS implements transitive deps
-            host: master
+            platform: f28
         requires:
-            platform: master
+            platform: f28
     references:
         community: https://docs.pagure.org/modularity/
         documentation: https://fedoraproject.org/wiki/Fedora_Packaging_Guidelines_for_Modules
+    profiles:
+        default:
+            rpms:
+                - tangerine
+    api:
+        rpms:
+            - perl-Tangerine
+            - tangerine
     components:
         rpms:
-            ed:
-                rationale: A build dependency of mksh, to test buildorder.
+            perl-List-Compare:
+                rationale: A dependency of tangerine.
                 ref: master
-            mksh:
-                rationale: The main component of this module.
-                ref: master
-                buildorder: 1
